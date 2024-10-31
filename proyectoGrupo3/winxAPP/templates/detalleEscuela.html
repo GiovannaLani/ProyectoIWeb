@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>Detalle de la Escuela</title>
+</head>
+<body>
+    <h1>Detalle de la Escuela</h1>
+    <p>Nombre: {{ escuela.nombre }}</p>
+    <h2>Personajes</h2>
+    <ul>
+    {% for personaje in escuela.personajes.all %}
+        <li>
+            <a href="{% url 'detallePersonaje' personaje.id %}">
+                {{ personaje.nombre }}
+            </a>
+        </li>
+    {% empty %}
+        <li>No hay personajes asociados a esta escuela.</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>

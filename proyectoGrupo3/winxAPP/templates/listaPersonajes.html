@@ -1,0 +1,17 @@
+<html>
+<head>
+    <title>Lista de Personajes</title>
+</head>
+<body>
+    <h1>Lista de Personajes</h1>
+    <ul>
+    {% for personaje in personaje_list %}
+        <li>
+            <a href="{% url 'detallePersonaje' personaje.id %}">
+                {{ personaje.nombre }}
+            </a>
+        </li>
+    {% endfor %}
+    </ul>
+</body>
+</html>

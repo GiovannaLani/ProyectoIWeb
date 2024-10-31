@@ -1,0 +1,17 @@
+<html>
+<head>
+    <title>Lista de Escuelas</title>
+</head>
+<body>
+    <h1>Lista de Escuelas</h1>
+    <ul>
+    {% for escuela in escuela_list %}
+        <li>
+            <a href="{% url 'detalleEscuela' escuela.id %}">
+                {{ escuela.nombre }}
+            </a>
+        </li>
+    {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>Detalle de la Temporada</title>
+</head>
+<body>
+    <h1>Detalle de la Temporada</h1>
+    <p>Nombre: {{ temporada.nombre }}</p>
+    <h2>Escuelas</h2>
+    <ul>
+    {% for escuela in temporada.escuelas.all %}
+        <li>
+            <a href="{% url 'detalleEscuela' escuela.id %}">
+                {{ escuela.nombre }}
+            </a>
+        </li>
+    {% empty %}
+        <li>No hay escuelas asociadas a esta temporada.</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
