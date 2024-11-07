@@ -4,7 +4,7 @@ from .models import Temporada, Escuela, Personaje
 
 # Create your views here.
 def index(request):
-    return HttpResponse('primera vista')
+    return render(request, 'index.html')
 
 def listaTemporadas(request):
     temporadas = Temporada.objects.order_by('nombre')
@@ -14,18 +14,7 @@ def listaTemporadas(request):
 def detalleTemporada(request, id_temporada):
     try:
         temporada = Temporada.objects.get(pk=id_temporada)
-        escuelas = temporada.escuelas.all()
-
-        cadenaDeTexto = f"Temporada: {temporada.nombre}\n"
-
-        if escuelas.exists():
-            cadenaDeTexto += "Escuelas:\n"
-            for escuela in escuelas:
-                cadenaDeTexto += f"- {escuela.nombre}\n"
-        else:
-            cadenaDeTexto += "No hay escuelas asociados a esta temporada."
-
-        contexto = {'temporada_list': temporada}
+        contexto = {'temporada': temporada}
         return render(request, 'detalleTemporada.html', contexto)
     except Temporada.DoesNotExist:
         return HttpResponseNotFound("Temporada no encontrada")
@@ -33,39 +22,27 @@ def detalleTemporada(request, id_temporada):
 
 def listaEscuelas(request):
     escuelas = Escuela.objects.order_by('nombre')
-    nombres_escuelas = ', '.join([escuela.nombre for escuela in escuelas])
-    return HttpResponse(nombres_escuelas)
+    contexto = {'escuela_list': escuelas}
+    return render(request, 'listaEscuelas.html', contexto)
 
 def detalleEscuela(request, id_escuela):
     try:
         escuela = Escuela.objects.get(pk=id_escuela)
-        personajes = escuela.personajes.all()
-
-        cadenaDeTexto = f"Escuela: {escuela.nombre}\n"
-
-        if personajes.exists():
-            cadenaDeTexto += "Personajes:\n"
-            for personaje in personajes:
-                cadenaDeTexto += f"- {personaje.nombre}\n"
-        else:
-            cadenaDeTexto += "No hay personajes asociados a esta escuela."
-
-        return HttpResponse(cadenaDeTexto)
+        contexto = {'escuela': escuela}
+        return render(request, 'detalleEscuela.html', contexto)
     except Escuela.DoesNotExist:
         return HttpResponseNotFound("Escuela no encontrada")
     
 
 def listaPersonajes(request):
     personajes = Personaje.objects.order_by('nombre')
-    nombres_personajes = ', '.join([personaje.nombre for personaje in personajes])
-    return HttpResponse(nombres_personajes)
+    contexto = {'personaje_list': personajes}
+    return render(request, 'listaPersonajes.html', contexto)
 
 def detallePersonaje(request, id_personaje):
     try:
         personaje = Personaje.objects.get(pk=id_personaje)
-
-        cadenaDeTexto = f"Personaje: {personaje.nombre}\n"
-
-        return HttpResponse(cadenaDeTexto)
+        contexto = {'personaje': personaje}
+        return render(request, 'detallePersonaje.html', contexto)
     except Personaje.DoesNotExist:
         return HttpResponseNotFound("Personaje no encontrado")

@@ -1,10 +1,18 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
     <title>Detalle de la Escuela</title>
 </head>
 <body>
     <h1>Detalle de la Escuela</h1>
     <p>Nombre: {{ escuela.nombre }}</p>
+    <p>Primera Aparicion: {{ escuela.primeraAparicion }}</p>
+    <p>Especialidad: {{ escuela.especialidad }}</p>
+    <p>Localizacion: {{ escuela.localizacion }}</p>
+    <p>Director/a: {{ escuela.directora }}</p>
+    <img src="{{ escuela.image_url }}" alt="imagen escuela">
     <h2>Personajes</h2>
     <ul>
     {% for personaje in escuela.personajes.all %}

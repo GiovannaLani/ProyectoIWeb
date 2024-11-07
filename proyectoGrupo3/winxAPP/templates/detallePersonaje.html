@@ -1,9 +1,19 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
     <title>Detalle del Personaje</title>
 </head>
 <body>
     <h1>Detalle del Personaje</h1>
     <p>Nombre: {{ personaje.nombre }}</p>
+    <p>Clase: {{ personaje.clase }}</p>
+    <p>Genero: {{ personaje.genero }}</p>
+    <p>Cumpleaños: {{ personaje.cumpleaños }}</p>
+    <p>Afiliacion: {{ personaje.afiliacion }}</p>
+    <p>Poderes / Armas: {{ personaje.poderes }}</p>
+    <p>Origen: {{ personaje.origen }}</p>
+    <img src="{{ personaje.image_url }}" alt="imagen personaje">
 </body>
 </html>

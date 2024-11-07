@@ -1,10 +1,19 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
     <title>Detalle de la Temporada</title>
 </head>
 <body>
     <h1>Detalle de la Temporada</h1>
     <p>Nombre: {{ temporada.nombre }}</p>
+    <p>Número temporada: {{ temporada.numeroTemporada }}</p>
+    <p>Número de episodios: {{ temporada.numeroEpisodios }}</p>
+    <p>Fecha de estreno: {{ temporada.fechaEstreno }}</p>
+    <p>Fecha final: {{ temporada.fechaFinal }}</p>
+    <p>Sinopsis: {{ temporada.sinopsis }}</p>
+    <img src="{{ temporada.image_url }}" alt="logo">
     <h2>Escuelas</h2>
     <ul>
     {% for escuela in temporada.escuelas.all %}
