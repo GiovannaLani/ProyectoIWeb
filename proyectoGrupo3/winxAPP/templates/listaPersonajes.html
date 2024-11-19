@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Lista de Personajes</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block contenido %}
     <h1>Lista de Personajes</h1>
     <ul>
     {% for personaje in personaje_list %}
@@ -16,5 +10,17 @@
         </li>
     {% endfor %}
     </ul>
-</body>
-</html>
+{% endblock %}
+
+{% block titulo %}
+<h1 class="display-3 text-white mb-md-4">Personajes</h1>
+{% endblock %}
+
+{% block tituloinformacion %}
+<h1 class="section-title position-relative text-center mb-5">Sobre los personajes</h1>
+{% endblock %}
+
+{% block informacion %}
+<p>Los personajes principales de Winx Club son un grupo diverso de hadas que destacan por sus personalidades únicas, habilidades mágicas y profundo vínculo de amistad. Como equipo, enfrentan juntos numerosos desafíos, combinando sus poderes y fortalezas individuales para superar obstáculos y proteger los reinos mágicos.</p>
+<p>A lo largo de la serie, los personajes muestran un notable crecimiento personal. Desde sus inseguridades iniciales hasta la confianza plena en sus capacidades, cada una evoluciona en su camino, aprendiendo importantes lecciones sobre liderazgo, trabajo en equipo y superación. Además, cada hada refleja valores como la empatía, el coraje, la creatividad y la perseverancia, lo que las convierte en modelos de inspiración para los espectadores.</p>
+{% endblock %}

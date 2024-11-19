@@ -1,20 +1,35 @@
-<!DOCTYPE html>
-
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Lista de Escuelas</title>
-</head>
-<body>
-    <h1>Lista de Escuelas</h1>
+{% extends 'listasBase.html' %}
+{% block contenidoTitulo %}
+<h1 class="section-title position-relative mb-5">Lista de Escuelas</h1>
+{% endblock %}
+{% block contenido %}
+    
     <ul>
     {% for escuela in escuela_list %}
-        <li>
-            <a href="{% url 'detalleEscuela' escuela.id %}">
-                {{ escuela.nombre }}
-            </a>
-        </li>
+    <div class="service-item">
+        <div class="service-img mx-auto">
+            <img class="rounded-circle w-100 h-100 bg-light p-3" src="{{ escuela.image_url }}" style="object-fit: cover;">
+        </div>
+        <div class="position-relative text-center bg-light rounded p-4 pb-5" style="margin-top: -75px;">
+            <h5 class="font-weight-semi-bold mt-5 mb-3 pt-5">{{ escuela.nombre }}</h5>
+            <p>{{ escuela.especialidad }}</p>
+            <a href="{% url 'detalleEscuela' escuela.id %}" class="border-bottom border-secondary text-decoration-none text-secondary">Info</a>
+        </div>
+    </div>
+
     {% endfor %}
     </ul>
-</body>
-</html>
+{% endblock %}
+
+{% block titulo %}
+<h1 class="display-3 text-white mb-md-4">Escuelas</h1>
+{% endblock %}
+    
+{% block tituloinformacion %}
+<h1 class="section-title position-relative text-center mb-5">Sobre las escuelas</h1>
+{% endblock %}
+    
+{% block informacion %}
+<p>En el universo de Winx Club, las escuelas mágicas juegan un papel fundamental en la formación de jóvenes con poderes especiales. Estas instituciones son lugares donde las estudiantes y estudiantes aprenden a dominar sus habilidades, ya sea magia, combate o habilidades tecnológicas, preparándolos para enfrentar los desafíos que el mundo mágico les presenta.</p>
+<p>Las escuelas no solo ofrecen educación, sino que también sirven como centros donde los personajes desarrollan su crecimiento personal y fortalecen los lazos de amistad. Cada institución tiene su propio enfoque y especialización, reflejando las diversas facetas de la magia y las fuerzas que gobiernan el mundo de Magix. En ellas, los estudiantes aprenden lecciones valiosas sobre trabajo en equipo, liderazgo y la importancia de elegir el bien sobre el mal, enfrentando pruebas que les ayudan a superar sus miedos y desafíos internos.</p>
+{% endblock %}

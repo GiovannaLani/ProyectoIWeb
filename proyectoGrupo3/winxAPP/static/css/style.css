@@ -9998,14 +9998,6 @@ h6,
   z-index: -1;
 }
 
-.service-item .service-img img {
-  transition: 1s;
-}
-
-.service-item:hover .service-img img {
-  transform: rotate(360deg);
-}
-
 .product-item,
 .product-item h5 {
   transition: .5s;
