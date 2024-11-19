@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Menú Principal</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block contenido %}
     <h1>Menú Principal</h1>
     <p>Elige una opción:</p>
     <ul>
@@ -13,5 +7,4 @@
         <li><a href="{% url 'listaEscuelas' %}">Ver Lista de Escuelas</a></li>
         <li><a href="{% url 'listaPersonajes' %}">Ver Lista de Personajes</a></li>
     </ul>
-</body>
-</html>
+{% endblock %}

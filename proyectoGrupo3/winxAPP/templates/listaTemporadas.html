@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Lista de Temporadas</title>
-</head>
-<body>
+{% extends 'infoTemporadas.html' %}
+{% block contenido %}
     <h1>Lista de Temporadas</h1>
     <ul>
     {% for temporada in temporada_list %}
@@ -16,5 +10,5 @@
         </li>
     {% endfor %}
     </ul>
-</body>
-</html>
+{% endblock %}
+
