@@ -1,19 +1,17 @@
-<!DOCTYPE html>
-
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Detalle del Personaje</title>
-</head>
-<body>
-    <h1>Detalle del Personaje</h1>
-    <p>Nombre: {{ personaje.nombre }}</p>
-    <p>Clase: {{ personaje.clase }}</p>
-    <p>Genero: {{ personaje.genero }}</p>
-    <p>Cumpleaños: {{ personaje.cumpleaños }}</p>
-    <p>Afiliacion: {{ personaje.afiliacion }}</p>
-    <p>Poderes / Armas: {{ personaje.poderes }}</p>
-    <p>Origen: {{ personaje.origen }}</p>
-    <img src="{{ personaje.image_url }}" alt="imagen personaje">
-</body>
-</html>
+{% extends 'detalleBase.html' %}
+{% block contenidoTitulo %}
+<h1 class="section-title position-relative mb-5 colorWhite">Detalle de Personaje</h1>
+{% endblock %}
+{% block contenido %}
+    <p><b>Nombre:</b> {{ personaje.nombre }}</p>
+    <p><b>Clase:</b> {{ personaje.clase }}</p>
+    <p><b>Genero:</b> {{ personaje.genero }}</p>
+    <p><b>Cumpleaños:</b> {{ personaje.cumpleaños }}</p>
+    <p><b>Afiliacion:</b> {{ personaje.afiliacion }}</p>
+    <p><b>Poderes / Armas:</b> {{ personaje.poderes }}</p>
+    <p><b>Origen:</b> {{ personaje.origen }}</p>
+    <p><b>Descripción:</b> {{ personaje.descripcion }}</p>
+{% endblock %}
+{% block imagenContenido %}
+<img class="position-absolute w-100 h-100" src="{{ personaje.image_url }}" style="object-fit: contain;" alt="imagen personaje">
+{% endblock %}

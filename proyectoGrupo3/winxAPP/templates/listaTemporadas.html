@@ -1,15 +1,20 @@
-{% extends 'base.html' %}
+{% extends 'listasBase.html' %}
+{% block contenidoTitulo %}
+<h1 class="section-title position-relative mb-5">Lista de Temporadas</h1>
+{% endblock %}
 {% block contenido %}
-    <h1>Lista de Temporadas</h1>
-    <ul>
     {% for temporada in temporada_list %}
-        <li>
-            <a href="{% url 'detalleTemporada' temporada.id %}">
-                {{ temporada.nombre }}
-            </a>
-        </li>
+    <div class="service-item p-3">
+        <div class="service-img mx-auto">
+            <img class="rounded-circle w-100 h-100 bg-light p-3" src="{{ temporada.image_url }}" style="object-fit: contain;">
+        </div>
+        <div class="position-relative text-center bg-light rounded p-4 pb-5" style="margin-top: -75px;">
+            <h5 class="font-weight-semi-bold mt-5 mb-3 pt-5">{{ temporada.nombre }}</h5>
+            <p>Temporada {{ temporada.numeroTemporada }}</p>
+            <a href="{% url 'detalleTemporada' temporada.id %}" class="border-bottom border-secondary text-decoration-none text-secondary">Info</a>
+        </div>
+    </div>
     {% endfor %}
-    </ul>
 {% endblock %}
 
 {% block titulo %}

@@ -96,39 +96,21 @@
     <!-- Navbar End -->
 
 
-    <!-- Carousel Start -->
-    <div class="container-fluid p-0 mb-5 pb-5">
-        <div id="header-carousel" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img id="imagen-winx-carousel" class="w-100" src="https://media.vandal.net/i/1280x720/5-2024/20/202452019132027_3.jpg" alt="Image">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px;">
-                            {%block titulo%} {%endblock%}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Carousel End -->
-
-
     <!-- About Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
+    <div class="container-fluid py-5 ">
+        <div class="container py-5 backgrounPink">
             <div class="row justify-content-center">
                 <div class="col-lg-7">
-                    {% block tituloinformacion %}{% endblock %}
+                    {% block contenidoTitulo %}{% endblock %}
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-4 py-5">
-                    {% block informacion %}{% endblock %}
+                    {% block contenido %}{% endblock %}
                 </div>
                 <div class="col-lg-4" style="min-height: 400px;">
                     <div class="position-relative h-100 rounded overflow-hidden">
-                        <img class="position-absolute w-100 h-100" src="https://www.uominiedonnecomunicazione.com/wp-content/uploads/2022/01/Winx-Club.jpg" style="object-fit: cover;">
+                        {% block imagenContenido %}{% endblock %}
                     </div>
                 </div>
             </div>
@@ -136,13 +118,12 @@
     </div>
     <!-- About End -->
 
-
     <!-- Services Start -->
     <div class="container-fluid py-5">
         <div class="container py-5">
             <div class="row">
                 <div class="col-lg-6">
-                    {% block contenidoTitulo %}{% endblock %}
+                    {% block tituloRelaciones %}{% endblock %}
                 </div>
                 <div class="col-lg-6 mb-5 mb-lg-0 pb-5 pb-lg-0"></div>
             </div>
@@ -150,7 +131,7 @@
                 <div class="col-12">
                     <div class="owl-carousel service-carousel">
                         <div class="d-flex flex-wrap">
-                            {% block contenido %}{% endblock %}
+                            {% block contenidoRelaciones %}{% endblock %}
                         </div>
                     </div>
                 </div>

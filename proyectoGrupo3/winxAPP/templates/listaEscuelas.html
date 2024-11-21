@@ -4,9 +4,8 @@
 {% endblock %}
 {% block contenido %}
     
-    <ul>
     {% for escuela in escuela_list %}
-    <div class="service-item">
+    <div class="service-item p-3">
         <div class="service-img mx-auto">
             <img class="rounded-circle w-100 h-100 bg-light p-3" src="{{ escuela.image_url }}" style="object-fit: cover;">
         </div>
@@ -18,7 +17,6 @@
     </div>
 
     {% endfor %}
-    </ul>
 {% endblock %}
 
 {% block titulo %}

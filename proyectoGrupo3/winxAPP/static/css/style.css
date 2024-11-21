@@ -21,6 +21,14 @@
   color: #edc1cf;
   text-decoration: underline;
 }
+.colorWhite{
+  color: white;
+}
+.backgrounPink{
+  background-color: #de698e;
+  border-radius: 20px;
+  color: white;
+}
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -9974,7 +9982,10 @@ h6,
   border-radius: 60px;
   font-size: 30px;
 }
-
+.service-item{
+  flex: 0 0 50%; 
+  max-width: 50%;
+}
 .service-item .service-img {
   position: relative;
   width: 150px;
@@ -9997,6 +10008,8 @@ h6,
   border-radius: 150px;
   z-index: -1;
 }
+
+
 
 .product-item,
 .product-item h5 {

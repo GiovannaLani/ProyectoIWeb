@@ -21,6 +21,7 @@ class Escuela(models.Model):
     directora = models.CharField(max_length=100,blank=True, null=True)
     image_url = models.URLField(blank=True, null=True)
     temporadas = models.ManyToManyField(Temporada, related_name='escuelas')
+    descripcion = models.CharField(max_length= 10000,blank=True, null=True)
 
     def __str__(self):
         return self.nombre
@@ -35,5 +36,6 @@ class Personaje(models.Model):
     origen = models.CharField(max_length=100,blank=True, null=True)
     image_url = models.URLField(blank=True, null=True)
     escuela = models.ForeignKey(Escuela, related_name='personajes', on_delete=models.CASCADE)
+    descripcion = models.CharField(max_length= 10000,blank=True, null=True)
     def __str__(self):
         return self.nombre
