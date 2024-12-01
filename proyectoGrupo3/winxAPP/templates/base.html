@@ -26,6 +26,7 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
 </head>
 
 <body>
@@ -154,7 +155,34 @@
         </div>
     </div>
     <!-- Promotion End -->
-
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 text-center">
+                    <h1>Más Infromación</h1>
+                </div>
+                <select id="info-type" class="custom-select custom-select-lg mb-3">
+                    <option value="WinxClub" selected>Winx Club</option>
+                    <option value="WorldOfWinx">World of Winx</option>
+                    <option value="FateTheWinxSaga">Fate: The Winx Saga</option>
+                </select>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 py-5">
+                    <h2 id ="moreInfoTitle"></h2>
+                    <img id ="moreInfoImg" href="" alt="imagen">
+                </div>
+                <div class="col-lg-4 py-5">
+                    <div class="position-relative h-100 rounded overflow-hidden">
+                        <h3>Summary</h3>
+                        <p id ="moreInfoDescripcion"></p>
+                        <h3>Genres</h3>
+                        <ul id ="moreInfoGeneros"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Footer Start -->
     <div class="container-fluid footer bg-light py-5" style="margin-top: 90px;">
         <div class="container text-center py-5">
@@ -178,7 +206,7 @@
         </div>
     </div>
     <!-- Footer End -->
-
+    <script src="{% static 'js/scripts.js' %}"></script>
 </body>
 
 </html>
