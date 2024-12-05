@@ -15,14 +15,15 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
-
+#logout-form button{
+    color: #ff1493;
+}
 button, input[type="submit"], .button {
     background-color: #ff1493; 
-    color: #ffffff;
+    color: #ff69b4;
     border: 1px solid #ff69b4; 
-    padding: 8px 16px;
+    padding: 8px 8px;
     border-radius: 5px;
-    transition: background-color 0.3s;
 }
 
 button:hover, input[type="submit"]:hover, .button:hover {
@@ -69,14 +70,20 @@ tr:nth-child(odd) {
 form {
     background-color: #ffe4e1;
     border: 1px solid #ff1493;
-    padding: 20px;
+    padding: 15px;
     border-radius: 8px;
+    color: #ff1493;
 }
-
+#content-related .module h2{
+    background-color: #ff69b4;
+    color: #ffffff;
+}
 .app-auth{
     background-color: #ffe4e1; 
 }
-
+.module caption{
+    background-color: #ff1493; 
+}
 .app-winxAPP{
     background-color: #ffe4e1; 
 }
