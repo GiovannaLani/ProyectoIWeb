@@ -1,0 +1,284 @@
+[
+    {
+        "model": "winxAPP.Escuela",
+        "pk": 1,
+        "fields": {
+            "nombre": "Torre de Nubes",
+            "primeraAparicion": "El Instituto Alfea para Hadas",
+            "especialidad": "Escuela de brujas y hechiceras",
+            "localizacion": "Magix",
+            "directora": "Griffin",
+            "image_url": "https://static.wikia.nocookie.net/winx/images/9/95/CloudTower.png/revision/latest/scale-to-width-down/1000?cb=20200420042119&path-prefix=es",
+            "temporadas": [1, 2, 3, 4],
+            "descripcion": "Torre Nubosa/Torre de Nubes se enorgullece de haber enseñado a algunas de las más malvadas brujas en el universo. Con unos cursos estelares que ofrecen maleficios y varios niveles de maldad avanzada, esta escuela es el pináculo de la educación en las artes oscuras. Es difícil de entrar, ya que hay un campo de defensa que lo rodea. Sin embargo, hay maneras de pasar más allá de esta defensa: los túneles que conectan a las escuelas, las formas de superar el propio campo, y se puede entrar si uno es invitado, por ejemplo, Valtor transformándose en un ciervo perseguido por los lobos (en realidad las Trix). Junto con eso, la torre puede ser manipulada como un dispositivo de confusión de alta tecnología por el que es capaz de controlarla. Esto gira el edificio formando nuevos corredores o pasajes para confundir a todos aquellos en su interior."
+        }
+    },
+    {
+        "model": "winxAPP.Escuela",
+        "pk": 2,
+        "fields": {
+            "nombre": "Fuente Roja",
+            "primeraAparicion": "Cita con el Desastre",
+            "especialidad": "Paladines y escuderos",
+            "localizacion": "Magix",
+            "directora": "Saladino",
+            "image_url": "https://static.wikia.nocookie.net/winx/images/9/9c/FontanaRojaE801.png/revision/latest/scale-to-width-down/1000?cb=20200704234408&path-prefix=es",
+            "temporadas": [1, 2, 3, 4],
+            "descripcion": "Fontana Roja entrena a los chicos jóvenes más valientes de la Dimensión Mágica para convertirlos en auténticos guerreros, hábiles en el uso de la tecnología y la magia para el servicio militar de su mundo. Los estudiantes son entrenados aprendiendo a manejar armas, desde las más tradicionales como espada y mazas o también armas modernas, como armas de fuego. La escuela cuenta con una amplia gama de clases de supervivencia básica y mágica, para cerrar el trimestre ellos hacen combates en dragones y vehículos voladores. La escuela se encarga de la defensa del Reino de Magix. La escuela también parece enseñar magia, pero ningún estudiante ha sido visto mostrando habilidades mágicas."
+        }
+    },
+    {
+        "model": "winxAPP.Escuela",
+        "pk": 3,
+        "fields": {
+            "nombre": "Alfea",
+            "primeraAparicion": "Un Acontecimiento Inesperado/Un Evento Inesperado",
+            "especialidad": "Escuela de Hadas",
+            "localizacion": "Magix",
+            "directora": "Faragonda",
+            "image_url": "https://static.wikia.nocookie.net/winx/images/f/f0/Alfea.png/revision/latest/scale-to-width-down/290?cb=20171008172946&path-prefix=es",
+            "temporadas": [1, 2, 3, 4],
+            "descripcion": "Las aprendices de hada vienen a esta escuela para aprender a formular hechizos, crear auras encantadas y hacer pociones mágicas. Elaboración de pociones, metaformo simbiosis, filosofía mágica y etiqueta… son algunas de las complejas materias enseñadas por hábiles, estrictos y exigentes profesores. Gracias a las lecciones, las adolescentes hadas aspirantes aprenden a utilizar y perfeccionar sus poderes con el fin de luchar contra el demonio en nombre de la igualdad, fraternidad y de la justicia. Las estudiantes de Alfea viven en la misma escuela, que tiene una enorme y excelentemente archivada biblioteca y un Archivo Mágico que alberga los secretos más importantes de Magix."
+        }
+    },
+    {
+        "model": "winxAPP.Personaje",
+        "pk": 1,
+        "fields": {
+          "nombre": "Bloom",
+          "clase": "Hada",
+          "genero": "Femenino",
+          "cumpleaños": "1990-12-10",
+          "afiliacion": "Winx Club",
+          "poderes": "Fuego",
+          "origen": "Domino",
+          "image_url": "https://static.wikia.nocookie.net/near-pure-good-hero/images/0/0e/Bloom_%28Winx%29.png/revision/latest?cb=20240912151926",
+          "escuela": 3,
+          "descripcion": "Bloom es la protagonista de Winx Club y la guardiana de la Llama del Dragón, un poder mágico relacionado con el fuego. Originaria de la Tierra, descubre que es la princesa de Domino y una de las hadas más poderosas del universo. Tiene cabello rojo brillante, ojos azules y un estilo moderno que se transforma en atuendos mágicos con alas cuando usa sus poderes. Valiente, leal y curiosa, Bloom es una líder natural que enfrenta desafíos para proteger a sus amigos y encontrar su lugar en el mundo mágico."
+        }
+    },
+    {
+        "model": "winxAPP.Personaje",
+        "pk": 2,
+        "fields": {
+          "nombre": "Musa",
+          "clase": "Hada",
+          "genero": "Femenino",
+          "cumpleaños": "1990-05-30",
+          "afiliacion": "Winx Club",
+          "poderes": "Música y ondas de sonido",
+          "origen": "Melodia",
+          "image_url": "https://i.pinimg.com/originals/1d/53/2b/1d532b1098ebbfb47e849f71a321e514.png",
+          "escuela": 3,
+          "descripcion": "Musa es uno de los personajes principales de Winx Club y el hada de la música, con poderes relacionados con el sonido y la armonía. Originaria del planeta Melodía, es apasionada por la música y toca varios instrumentos. Tiene cabello largo y oscuro que a menudo lleva en coletas o peinados prácticos, ojos oscuros y un estilo personal con toques deportivos y modernos, que en sus transformaciones se vuelven trajes llenos de colores vibrantes y detalles musicales. Musa es creativa, sensible y a veces reservada, pero profundamente leal a sus amigas, mostrando una conexión emocional especial con el arte y la música como forma de expresión."
+        }
+      },
+      {
+        "model": "winxAPP.Personaje",
+        "pk": 3,
+        "fields": {
+          "nombre": "Stella",
+          "clase": "Hada",
+          "genero": "Femenino",
+          "cumpleaños": "1990-08-18",
+          "afiliacion": "Winx Club",
+          "poderes": "Luz",
+          "origen": "Solaria",
+          "image_url": "https://static.wikia.nocookie.net/p__/images/2/25/Stella_%28Winx_Club%29.png/revision/latest/scale-to-width/360?cb=20171208213644&path-prefix=protagonist",
+          "escuela": 3,
+          "descripcion": "Stella es el hada del Sol y la Luna en Winx Club, y proviene del reino de Solaria, donde es la princesa heredera. Es alegre, extrovertida y a menudo la más confiada del grupo, aunque a veces puede ser impulsiva y centrada en la moda. Tiene cabello largo y rubio, ojos color miel y un estilo llamativo que refleja su amor por el glamour, destacando colores cálidos como el amarillo y el naranja. En sus transformaciones mágicas, lleva trajes resplandecientes que simbolizan su conexión con la luz y el brillo. Stella es creativa, valiente y profundamente leal, actuando como una amiga incondicional que aporta luz y optimismo al equipo."
+        }
+      },
+      {
+        "model": "winxAPP.Personaje",
+        "pk": 4,
+        "fields": {
+          "nombre": "Tecna",
+          "clase": "Hada",
+          "genero": "Femenino",
+          "cumpleaños": "1990-12-16",
+          "afiliacion": "Winx Club",
+          "poderes": "Tecnología",
+          "origen": "Zenith",
+          "image_url": "https://preview.redd.it/tecna-redesign-magic-winx-v0-pz79wtrrsqwd1.png?width=640&crop=smart&auto=webp&s=b1c9cb1f3c4a4e41eb2d983b95d90321aaee9b79",
+          "escuela": 3,
+          "descripcion": "Tecna es el hada de la tecnología en Winx Club y destaca por su intelecto y habilidades analíticas. Proviene del planeta Zenith, conocido por su avanzada tecnología, y tiene un talento innato para la ciencia, la ingeniería y los sistemas informáticos. Su cabello es corto y de color violeta, con un estilo moderno y práctico, mientras que sus transformaciones incluyen trajes con un diseño futurista y colores como el púrpura y el verde. Tecna es lógica, pragmática y enfocada en resolver problemas, aunque a veces lucha por expresar sus emociones. Sin embargo, su lealtad y compromiso la convierten en una amiga valiosa para el grupo."
+        }
+      },
+      {
+        "model": "winxAPP.Personaje",
+        "pk": 5,
+        "fields": {
+          "nombre": "Flora",
+          "clase": "Hada",
+          "genero": "Femenino",
+          "cumpleaños": "1990-03-01",
+          "afiliacion": "Winx Club",
+          "poderes": "Naturaleza",
+          "origen": "Linphea",
+          "image_url": "https://i.pinimg.com/736x/af/cf/25/afcf25dcfb5d74a891e18f584e7010e7.jpg",
+          "escuela": 3,
+          "descripcion": "Flora es el hada de la naturaleza en Winx Club, conocida por su conexión con las plantas y el medio ambiente. Proviene del planeta Linphea, un lugar lleno de vida y vegetación. Es dulce, amable y empática, siempre preocupada por el bienestar de los demás. Tiene cabello largo y castaño claro, a menudo decorado con flores, y ojos verdes que reflejan su amor por la naturaleza. Su estilo cotidiano es delicado y femenino, con tonos pastel, mientras que en sus transformaciones mágicas usa trajes con diseños florales y colores como el rosa y el verde. Flora es pacífica pero valiente, una amiga leal que inspira armonía y cuidado por el mundo natural."
+        }
+      },
+      {
+        "model": "winxAPP.Personaje",
+        "pk": 6,
+        "fields": {
+          "nombre": "Layla",
+          "clase": "Hada",
+          "genero": "Femenino",
+          "cumpleaños": "1990-03-06",
+          "afiliacion": "Winx Club",
+          "poderes": "Manipulación de líquidos",
+          "origen": "Andros",
+          "image_url": "https://i.pinimg.com/236x/40/89/05/40890527c4fd05d6cb552e9cc429692e.jpg",
+          "escuela": 3,
+          "descripcion": "Layla es el hada de los fluidos en Winx Club y la princesa del planeta Andros, un reino acuático. Tiene poderes relacionados con el agua y los líquidos, que maneja con gran habilidad en combate y situaciones creativas. Es valiente, decidida y atlética, con un fuerte sentido de justicia y lealtad hacia sus amigas. Layla tiene piel morena, cabello rizado y oscuro que suele llevar suelto o recogido, y ojos color avellana. Su estilo combina practicidad y dinamismo, reflejado en sus transformaciones mágicas con trajes en tonos azulados y verdes que evocan su conexión con el agua."
+        }
+      },
+      {
+        "model": "winxAPP.Personaje",
+        "pk": 7,
+        "fields": {
+          "nombre": "Icy",
+          "clase": "Bruja",
+          "genero": "Femenino",
+          "cumpleaños": "1990-12-06",
+          "afiliacion": "Torre de Nubes",
+          "poderes": "Magia de hielo",
+          "origen": "Dyamond",
+          "image_url": "https://preview.redd.it/kombatant-profile-icy-mortal-kombat-x-winx-club-v0-25aky76fg5lb1.png?width=557&format=png&auto=webp&s=8c85db63af59ef4a6c3df4b395132bada93e386a",
+          "escuela": 1,
+          "descripcion": "Es una bruja que ha sido descrita teniendo un Corazón de Hielo, en referencia a su papel de la Bruja de Hielo. Como la bruja mayor y más poderosa del trío, ella es la líder despiadada de las Trix, un grupo de tres brujas, y desea gobernar el universo."
+        }
+      },
+      {
+        "model": "winxAPP.Personaje",
+        "pk": 8,
+        "fields": {
+          "nombre": "Darcy",
+          "clase": "Bruja",
+          "genero": "Femenino",
+          "cumpleaños": "1990-04-23",
+          "afiliacion": "Torre de Nubes",
+          "poderes": "Magia negra",
+          "origen": "Desconocido",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD9kqlQoenXDs0PGup28EfnrdBYort3HrZSA&s",
+          "escuela": 1,
+          "descripcion": "Es una joven bruja que se describe como La reina de la oscuridad. Ella forma parte de Las Trix que son sus hermanas. Es la más tranquila y la más competente de sus hermanas, es una manipuladora usa sus poderes oscuros e ilusiones para confundir y controlar a sus oponentes."
+        }
+      },
+      {
+        "model": "winxAPP.Personaje",
+        "pk": 9,
+        "fields": {
+          "nombre": "Stormy",
+          "clase": "Bruja",
+          "genero": "Femenino",
+          "cumpleaños": "1990-08-16",
+          "afiliacion": "Torre de Nubes",
+          "poderes": "Electricidad y tormentas",
+          "origen": "Desconocido",
+          "image_url": "https://d2bzx2vuetkzse.cloudfront.net/unshoppable_producs/ec6db672-d916-46f9-a97c-628b34712649.jpeg",
+          "escuela": 1,
+          "descripcion": "Es la más temperamental del grupo. Stormy es la Bruja de las Tormentas y el Rayo. Tiene el poder de invocar tormentas a voluntad, lanzar rayos y usar magia ofensiva. Es ambiciosa, impulsiva y profundamente competitiva."
+        }
+      },
+      {
+        "model": "winxAPP.Personaje",
+        "pk": 10,
+        "fields": {
+          "nombre": "Mirta",
+          "clase": "Bruja",
+          "genero": "Femenino",
+          "cumpleaños": "1990-12-09",
+          "afiliacion": "Torre de Nubes",
+          "poderes": "Ilusiones",
+          "origen": "Tierra",
+          "image_url": "https://static.wikia.nocookie.net/winx/images/9/96/MirtaCasual-Artwork.png/revision/latest/scale-to-width-down/148?cb=20210729030534&path-prefix=es",
+          "escuela": 1,
+          "descripcion": "Mirta es un personaje secundario en Winx Club, conocida como el hada de las ilusiones. Al contrario que las demás brujas, Mirta es la única que no tiene la personalidad agresiva como el resto de las otras estudiantes. Inicialmente estudia en la Torre de Nubes, pero se aleja de las brujas al ser más amable y justa que ellas, lo que la lleva a acercarse a las Winx. Tiene cabello rojo y rizado, ojos verdes y un estilo algo gótico, que refleja su tiempo en Torre de Nubes. Mirta es creativa, sensible y valiente, mostrando un gran corazón y disposición para cambiar su vida al seguir lo que considera correcto. Aunque no forma parte del grupo principal, es una aliada leal con habilidades mágicas únicas para crear ilusiones visuales."
+        }
+      },
+      {
+        "model": "winxAPP.Personaje",
+        "pk": 11,
+        "fields": {
+          "nombre": "Sky",
+          "clase": "Especialista",
+          "genero": "Masculino",
+          "cumpleaños": "1990-03-29",
+          "afiliacion": "Fuente Roja",
+          "poderes": "Espadachín experto",
+          "origen": "Eraklyon",
+          "image_url": "https://i.pinimg.com/originals/67/d2/5d/67d25d97689f548914be53be7c997e4a.png",
+          "escuela": 2,
+          "descripcion": "Sky es el príncipe heredero de Eraklyon y un estudiante de Fuente Roja. Valiente, leal y caballeroso, es un experto en combate con espada y un líder natural. Su relación con Bloom es central en la serie."
+        }
+      },
+      {
+        "model": "winxAPP.Personaje",
+        "pk": 12,
+        "fields": {
+          "nombre": "Brandon",
+          "clase": "Especialista",
+          "genero": "Masculino",
+          "cumpleaños": "1990-10-23",
+          "afiliacion": "Fuente Roja",
+          "poderes": "Combate cuerpo a cuerpo",
+          "origen": "Desconocido",
+          "image_url": "https://static.wikia.nocookie.net/winxclub/images/4/4b/Brandon_Specialist.jpg/revision/latest/scale-to-width-down/340?cb=20180623041959&path-prefix=es",
+          "escuela": 2,
+          "descripcion": "Brandon es el mejor amigo de Sky y un valiente guerrero en Fuente Roja. Su encanto y valentía lo convierten en un miembro importante del equipo."
+        }
+      },
+      {
+        "model": "winxAPP.Personaje",
+        "pk": 13,
+        "fields": {
+          "nombre": "Timmy",
+          "clase": "Especialista",
+          "genero": "Masculino",
+          "cumpleaños": "1990-02-15",
+          "afiliacion": "Grupo Especialistas",
+          "poderes": "Laser amarillo",
+          "origen": "Magix",
+          "image_url": "https://static.wikia.nocookie.net/p__/images/2/2e/Gfs.png/revision/latest?cb=20201128222730&path-prefix=protagonist",
+          "escuela": 2,
+          "descripcion": "Timmy es el cerebro de los Especialistas, conocido por su inteligencia y habilidades tecnológicas. Es el interés amoroso de Tecna y un amigo cercano de Helia. Su personalidad tranquila y analítica lo convierte en un miembro esencial del equipo."
+        }
+      },
+      {
+        "model": "winxAPP.Personaje",
+        "pk": 14,
+        "fields": {
+          "nombre": "Helia",
+          "clase": "Especialista",
+          "genero": "Masculino",
+          "cumpleaños": "1990-09-02",
+          "afiliacion": "Grupo Especialistas",
+          "poderes": "Guantes",
+          "origen": "Linphea",
+          "image_url": "https://i.pinimg.com/originals/59/4d/77/594d77a01abfde0bdff32c67b4b9c9ae.png",
+          "escuela": 2,
+          "descripcion": "Helia es el sobrino de Saladino y un Especialista talentoso con habilidades únicas en combate gracias a sus guantes. Es un poeta, pintor y gran piloto, además de ser el interés amoroso de Flora. Su carácter sereno y artístico lo distingue de los demás."
+        }
+      },
+      {
+        "model": "winxAPP.Personaje",
+        "pk": 15,
+        "fields": {
+          "nombre": "Riven",
+          "clase": "Especialista",
+          "genero": "Masculino",
+          "cumpleaños": "1990-10-15",
+          "afiliacion": "Grupo Especialistas",
+          "poderes": "Espada morada",
+          "origen": "Desconocido",
+          "image_url": "https://i.pinimg.com/originals/ca/c6/77/cac6774af0b3cc885dd60f30121e4aea.png",
+          "escuela": 2,
+          "descripcion": "Riven es el rebelde obstinado de los Especialistas. Aunque a menudo lucha con su temperamento, es un guerrero excepcional. Su interés amoroso es Musa, y su actitud desafiante a menudo lo lleva a pruebas de carácter y camaradería."
+        }
+      }
+]
