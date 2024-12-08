@@ -280,5 +280,57 @@
           "escuela": 2,
           "descripcion": "Riven es el rebelde obstinado de los Especialistas. Aunque a menudo lucha con su temperamento, es un guerrero excepcional. Su interés amoroso es Musa, y su actitud desafiante a menudo lo lleva a pruebas de carácter y camaradería."
         }
+      },
+      {
+        "model": "winxAPP.Temporada",
+        "pk": 1,
+        "fields": {
+          "nombre": "Winx Club",
+          "numeroTemporada": 1,
+          "numeroEpisodios": 26,
+          "fechaEstreno": "2004-01-28",
+          "fechaFinal": "2005-12-01",
+          "sinopsis": "La enorme historia del Winx Club comienza con Bloom, una joven adolescente de 16 años que vivía en un pueblo llamado Gardenia. Conoce a un hada llamada Stella y gracias a ella descubre su magia hasta entonces oculta. Juntas, van al mundo de Magix para aprender sobre la magia en la escuela Alfea, y allí conocen a Flora, a Musa y a Tecna, convirtiéndose en el Winx Club, y descubren el amor con cuatro especialistas de Fuente Roja: Sky, Brandon, Timmy y Riven. Pero también traban enemistad con tres peligrosas brujas de Torre de Nubes: Icy, Darcy y Stormy, autodenominadas “las Trix”, junto con un ogro muy fuerte llamado Knut, que es su secuaz. Riven también fue su secuaz durante un tiempo porque fue novio de Darcy, pero él y Knut se unen a los buenos más adelante. Hacia finales de la temporada, Bloom descubre que ella es la guardiana del Fuego del Dragón e hija de los reyes de Domino y hermana de la ninfa Daphne. Pierde sus poderes por el macabro plan de las Trix, y solo con la ayuda de las Winx y Daphne puede recuperarlos y triunfar.",
+          "image_url": "https://upload.wikimedia.org/wikipedia/fr/d/de/Winx_Club_Logo_Original.png"
+        }
+      },
+      {
+        "model": "winxAPP.Temporada",
+        "pk": 2,
+        "fields": {
+          "nombre": "Winx Club: Realix",
+          "numeroTemporada": 2,
+          "numeroEpisodios": 26,
+          "fechaEstreno": "2005-04-19",
+          "fechaFinal": "2005-07-15",
+          "sinopsis": "En su segundo año en Alfea, las Winx conocen e integran a su grupo a Layla, un hada que sufrió terribles experiencias con una extraña figura de la Oscuridad. El nuevo enemigo, descubierto como el antiguo fénix Lord Darkar, busca el supremo poder del Universo a través de la dimensión Realix, y debe valerse de Bloom, transformándola en Dark Bloom, para conseguirlo. Las Winx deben completar su transformación primaria obteniendo el Charmix. Además de Layla, aparece Helia, que es incorporado a los Especialistas, y las Pixies, que descubren su lazo mágico con las Winx. Con la ayuda de dichos personajes, el Winx Club se lanza directo a la batalla para derrotar a Lord Darkar y a las Trix.",
+          "image_url": "https://upload.wikimedia.org/wikipedia/fr/d/df/Winx_Club_%28deuxi%C3%A8me_logo%29.png"
+        }
+      },
+      {
+        "model": "winxAPP.Temporada",
+        "pk": 3,
+        "fields": {
+          "nombre": "Winx Club: Enchantix",
+          "numeroTemporada": 3,
+          "numeroEpisodios": 26,
+          "fechaEstreno": "2007-01-07",
+          "fechaFinal": "2007-03-28",
+          "sinopsis": "Un ser demoníaco llamado Valtor, regresa de la Dimensión Omega con las Trix. Valtor, teniendo un fuerte vínculo con Bloom, trata de dominar todos los mundos y toda la magia del Universo. Las Winx empiezan su tercer y último curso en Alfea, mientras que luchan con Valtor y descubren todavía más secretos del Universo.",
+          "image_url": "https://upload.wikimedia.org/wikipedia/fr/d/df/Winx_Club_%28deuxi%C3%A8me_logo%29.png"
+        }
+      },
+      {
+        "model": "winxAPP.Temporada",
+        "pk": 4,
+        "fields": {
+          "nombre": "Winx Club: El Poder de Believix",
+          "numeroTemporada": 4,
+          "numeroEpisodios": 26,
+          "fechaEstreno": "2009-04-15",
+          "fechaFinal": "2009-11-13",
+          "sinopsis": "En esta temporada, aparecen repentinamente unos malvados conocidos como “los magos del Círculo Negro”, que están peligrosamente al borde de terminar su misión. Las Winx, para detenerlos, deben volver a la Tierra, donde las espera el poder Believix y muchas sorpresas. Las hadas deberán recuperar la armonía en la Tierra, las creencias en la magia de la humanidad y detener la venganza de las hadas terrestres. Todo esto será mucho más fácil con la ayuda de la séptima Winx: Roxy.",
+          "image_url": "https://static.wikia.nocookie.net/winx/images/3/39/Site-community-image/revision/latest?cb=20230607130230&path-prefix=es"
+        }
       }
 ]
